@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Niharika's Portfolio Website showcasing web development projects and skills.">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="./styles.css">     
+    </head>
+    <body>
+    <header role="banner">
+        <nav role="navigation"></nav>
+    <ul style="list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0;">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+    <h2>About Me</h2>
+    <p>
+      My Name is Sada, and I am glad to share my Portfolio with you. This is my first experience with Web Development/HTML. I really hope my final output is gonna turn out well.
+    </p>
+  </section>
+    <h3>Projects</h3>
+    <article role="article">
+      <h4>Project One</h4>
+        <img src="https://www.google.com/imgres?q=html&imgurl=https%3A%2F%2Fstatic1.makeuseofimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2010%2F03%2FHTML-Understanding-Featured.jpg%3Fq%3D70%26fit%3Dcontain%26w%3D1200%26h%3D628%26dpr%3D1&imgrefurl=https%3A%2F%2Fwww.makeuseof.com%2Ftag%2F5-steps-understanding-basic-html-code%2F&docid=l1Xa1w4HPC5-qM&tbnid=kTKgDmRXrWv5AM&vet=12ahUKEwjsiPv1uP6OAxVOmmoFHU32F1kQM3oECBgQAA..i&w=1200&h=600&hcb=2&ved=2ahUKEwjsiPv1uP6OAxVOmmoFHU32F1kQM3oECBgQAA" alt="Screenshot of HTML code" style="max-width:100%;height:auto;">
+        <fcaption>This was my first JavaScript interaction.</caption>
+    </article>
+    <article role="article">
+      <h4>Project Two</h4>
+        <img src="https://www.google.com/imgres?q=css&imgurl=https%3A%2F%2Fblog.alexdevero.com%2Fwp-content%2Fuploads%2F2015%2F02%2Fcss-code-e1517469545230.jpeg&imgrefurl=https%3A%2F%2Fblog.alexdevero.com%2Fcss-5-mistakes-avoid%2F&docid=WPrMv2LyH17o6M&tbnid=4pGUZrDgEejW_M&vet=12ahUKEwiDvKGNuf6OAxUug2oFHa89BjgQM3oECCkQAA..i&w=1024&h=632&hcb=2&ved=2ahUKEwiDvKGNuf6OAxUug2oFHa89BjgQM3oECCkQAA" alt="Screenshot of CSS code" style="max-width:100%;height:auto;">
+        <caption>This was my first HTML interaction.</caption>
+    </article>
+    <article role="article">
+      <h4>Project Three</h4>
+        <img src="https://www.google.com/imgres?q=js&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F5dcc7f8c449e597be23356e0%2F6578840df7bf9fac056e8700_what-is-javascript-blog-hero-image.webp&imgrefurl=https%3A%2F%2Fwww.appacademy.io%2Fblog%2Fwhat-is-javascript&docid=W2VQAGup8DWR-M&tbnid=Pgn-0LW4RoEy4M&vet=12ahUKEwjQ_qSauf6OAxUAk2oFHbWdGckQM3oECEoQAA..i&w=942&h=628&hcb=2&ved=2ahUKEwjQ_qSauf6OAxUAk2oFHbWdGckQM3oECEoQAA" alt="Screenshot of JavaScript code" style="max-width:100%;height:auto;">
+        <caption>This was my first CSS interaction.</caption>
+    </article>
+  </section>
+<h5>My Skills</h5>
+  <ul role="list" aria-label="My Skills">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+<section id="contact" role="form" aria-labelledby="contact-heading">
+    <h6 id="contact-heading">Contact</h6>
+    <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required tabindex="0" aria-label="Name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required tabindex="0" aria-label="Email">
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required tabindex="0" aria-label="Message"></textarea>
+        </div>
+        <button type="submit" tabindex="0" aria-label="Send message">Send</button>
+    </form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

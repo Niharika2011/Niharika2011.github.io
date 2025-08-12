@@ -1,0 +1,230 @@
+h2 {
+    color: #091089;
+    padding: 32px 0 24px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+p {
+    color: #862f2f;
+    text-align: left;
+    font-family: 'arial', sans-serif;
+}
+h3 {
+       color: #145738;
+    padding: 32px 0 24px 0;
+    text-align: left;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+h4 {
+       color: #9fd362;
+    padding: 32px 0 24px 0;
+    text-align: left;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+h5 {
+       color: #680b32;
+    padding: 32px 0 24px 0;
+    text-align: left;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+h6 {
+       color: #096989;
+    padding: 32px 0 24px 0;
+    text-align: left;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+nav {
+    width: 900px;
+  height: 100px;
+  background-color: #4c0808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 900px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .project-card {
+        max-width: 95%;
+        flex: 1 1 100%;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        padding: 20px 0 16px 0;
+        font-size: 1.1rem;
+    }
+    .about-me {
+        padding: 20px 12px;
+        font-size: 1rem;
+    }
+    .projects {
+        padding: 0 4px;
+        gap: 16px;
+    }
+    .project-card {
+        padding: 16px 8px;
+    }
+    nav a {
+        margin: 0 8px;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+    #contact {
+        padding: 18px 8px;
+    }
+.project-card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(78, 84, 200, 0.10);
+    padding: 24px 20px;
+    margin: 0;
+    flex: 1 1 280px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 16px rgba(78, 84, 200, 0.18);
+}
+/* Skills list styling with icons */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+}
+
+.skills-list li {
+    width: 300px;
+  height: 200px;
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 14px;
+    font-size: 1.07rem;
+    color: #4e54c8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.skills-list li::before {
+    width: 300px;
+  height: 200px;
+    content: "💡";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+nav a:hover,
+nav a:focus {
+    width: 900px;
+  height: 100px;
+    color: #4c0808;
+    background: linear-gradient(90deg, #565875 0%, #222673 100%);
+    box-shadow: 0 2px 8px rgba(143, 148, 251, 0.15);
+}
+/* Contact Section Styles */
+#contact {
+  height: 700px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: #3a7c45;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+#contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+#contact form > div {
+    margin-bottom: 18px;
+}
+#contact label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #5d6a21;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+#contact textarea {
+    resize: vertical;
+}
+#contact button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background: #0078d4;
+    color: #837e7e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#contact button:hover {
+    width: 100%;
+    background: #005fa3;
+}
+.nav-links {
+  list-style: none;
+  display: flex; /* or your preferred layout */
+}
+
+.hamburger-icon,
+.menu-toggle {
+  display: none; /* Hide by default */
+}
+
+/* Mobile styles (inside media query) */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide desktop navigation */
+    /* Mobile menu styles */
+    width: 900px;
+  height: 100px;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    background: #a98484;
+    width: 100%;
+    z-index: 1;
+    flex-direction: column;
+  }
+
+  .hamburger-icon {
+    display: block; /* Show hamburger icon */
+    font-size: 2rem;
+    color: rgb(189, 47, 47);
+    cursor: pointer;
+  }
+
+  /* When the checkbox is checked, show the mobile menu */
+  #check:checked ~ .nav-links {
+    display: flex;
+  }
+}
+}
